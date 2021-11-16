@@ -1,3 +1,2 @@
 # Sudoku
-Chef de projet : Nouredine
-Collaborateur : Ismael
+Chef de projet : Nouredine // Collaborateur : Ismael
