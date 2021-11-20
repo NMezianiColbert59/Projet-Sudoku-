@@ -11,8 +11,8 @@ class Grid:
             >>> Grid().full, Grid(81*'2').full
             (False, True)
         """
-        pass
-            
+        self.puzzle = puzzle
+        self.full = 
         
     def loadFromFile(num):
         """
@@ -23,8 +23,8 @@ class Grid:
             >>> Grid.loadFromFile(0).puzzle[:10]
             '4.....8.5.'
         """
-        pass
-    
+        
+        
 if __name__ == '__main__':
     import doctest
     doctest.testmod()

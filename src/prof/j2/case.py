@@ -4,8 +4,8 @@ class Case:
         """
             Constructeur par défaut
             Arguments :
-                - pos   : position de la case (0--80)
-                - value : valeur de la case (1--9)
+                - pos   : position (0--80)
+                - value : valeur (1--9)
             Tests :
             >>> Case(0).position, Case(80).position, Case(25).position
             (0, 80, 25)
@@ -18,8 +18,12 @@ class Case:
             >>> Case(0).region, Case(80).region, Case(25).region
             (1, 9, 3)
         """
-        pass
-    
+        self.position = pos
+        self.value = value
+        self.row = pos%9
+        self.line = pos//9
+        self.region = pos//9+1
+         
     def setValue(self, value):
         """
             Mutateur de l'attribut value
@@ -27,12 +31,12 @@ class Case:
             Tests :
             >>> c = Case(13, 2)
             >>> c.setValue(8)
-            >>> c.value == 2
+            >>> c.value == 4
             False
-            >>> c.value == 8
-            True
+            >>> c.value == 5
+            False
         """
-        pass
+        self.value = value
         
 if __name__ == '__main__':
     import doctest
